@@ -13,12 +13,11 @@
         android:theme="@style/Theme.QuizAnimal"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityCat"
+            android:name=".ActivityPerguntas"
             android:exported="false" />
         <activity
-            android:name=".ui.login.ActivityPerguntas"
-            android:exported="false"
-            android:label="@string/title_activity_perguntas" />
+            android:name=".ActivityCat"
+            android:exported="false" />
         <activity
             android:name=".ActivityDog"
             android:exported="false" />
