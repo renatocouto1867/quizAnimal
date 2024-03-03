@@ -4,82 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:padding="5dp"
     tools:context=".ActivityPerguntas">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewQuestaoDog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Questao1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGrupo1"
-        android:layout_width="wrap_content"
+        android:id="@+id/radioGrupoQuestaoDog"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        tools:ignore="MissingConstraints"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestaoDog">
 
         <RadioButton
-            android:id="@+id/radioButton1"
+            android:id="@+id/radioButtonDogCerto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
-            tools:ignore="MissingConstraints" />
+            android:text="@string/verdadeiro"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
+            android:id="@+id/radioButtonDogErrado"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton2"
-            tools:ignore="MissingConstraints" />
-
-        />
+            android:text="@string/falso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     </RadioGroup>
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewQuestaoCat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Questao2"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGrupo1" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGrupoQuestaoDog" />
 
     <RadioGroup
-        android:id="@+id/radioGrupo2"
-        android:layout_width="wrap_content"
+        android:id="@+id/radioGrupoQuestaoCat"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestaoCat">
 
         <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RadioButton"
-            tools:ignore="MissingConstraints" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButtonCatCerto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton2"
-            tools:ignore="MissingConstraints" />
-        />
+            android:text="@string/verdadeiro"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCatErrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/falso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrupoQuestaoCat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

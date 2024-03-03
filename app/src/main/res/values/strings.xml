@@ -10,4 +10,24 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="verdadeiro">Verdadeiro</string>
+    <string name="falso">Falso</string>
+    <string name="resultado">Resultado</string>
+    <string name="gato">Gato</string>
+    <string name="raca_munchkin">Raça: Munchkin</string>
+    <string name="peso_gato">Peso: 2,5 – 4 kg</string>
+    <string name="vida_gato">Vive: de 10 a 15 anos</string>
+    <string name="altura_gato">Altura: 17 – 23 cm</string>
+    <string name="origem_gato">Origem: Estados Unidos</string>
+    <string name="proxima">Proxima</string>
+    <string name="contentDescription_Img_gato">Imagem gato</string>
+    <string name="contentDescription_Img_cachorro">Imagem Cachorro</string>
+    <string name="cachorro">Cachorro</string>
+    <string name="raca_cachorro">Raça: Chihuahua</string>
+    <string name="peso_dog">Peso: 1,5 – 3 kg</string>
+    <string name="vive_dog">Vive: de 12 a 20 anos</string>
+    <string name="altura_dog">Altura: 15 – 23 cm</string>
+    <string name="origem_dog">Origem: México</string>
+    <string name="proximo">Proximo</string>
+    <string name="imagem_iniciar">Imagem iniciar</string>
 </resources>
